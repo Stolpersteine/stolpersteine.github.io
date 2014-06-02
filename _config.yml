@@ -1,0 +1,5 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+description: A description for your blog
+url: http://nikriek.github.io/stolperstein-page/

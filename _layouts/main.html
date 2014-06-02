@@ -1,0 +1,158 @@
+---
+layout: default
+title: Stolperstein-App
+source: http://startbootstrap.com/templates/landing-page/
+---
+<div class="intro-header">
+	<div class="container">
+		<div class="language-toggle"><ul>
+			<li><a href="/de">Deutsch</a></li>
+			<li> | </li>
+			<li><a href="/en">English</a></li>
+		</ul></div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="intro-message">
+					<h1>App</h1>
+					<h3>Stolperstein-App mit Hintergrundinformationen</h3>
+					<hr class="intro-divider">
+					<ul class="list-inline intro-social-buttons"> 
+						<li>  
+                            <a data-container="body" data-toggle="popover" data-placement="left" rel="popover" data-content="In Entwicklung"><img src="/img/app_store_badge.svg"></a>
+                            <a href="#newsletter-form" class="btn btn-default lead"><span class="glyphicon glyphicon-envelope"></span> Newsletter</a>
+                        </li>                    
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="content-section-b">
+	<div class="container">
+
+
+		<h2 class="section-heading">{% case page.lang %}{% when 'en' %}Idea{% else %}Idee{% endcase %}</h2>
+		<hr class="section-heading-spacer">
+		<div class="clearfix"></div>
+		{% case page.lang %}
+		{% when 'en' %}
+		<p class="lead">Germany's history is tainted by the events surrounding the fate of the Jewish people during the reign of the "Third Reich”. The Nazis were responsible for the murdering of millions in Germany and the rest of Europe rounding up victims for their religious beliefs, ethnic origins, political leanings or sexual orientation. In Berlin alone tens of thousands were deported to death camps.</p>
+		<p class="lead">In memory of these victims more than 5,000 Stolpersteine ("tripping stones") have been set in the pavements in front of their former residences. The initiator of this Stolpersteine campaign is the German artist Gunter Demnig. The copper Stolpersteine give details of the victims name, biography and when and where he or she met his/her fateful death. Information concerning the location of the stones is deposited as Open Data. We used this information to create an iPhone Application to pinpoint locations on a city map. Our work is still in progress. The aim of our computing is to simplify the locating of the stones and to enable users to find details of each individual victim by linking up with Wikipedia or other digital databases. Our intention is to support the founders of the Stolpersteine Initiative to commemorate the innocent victims of the holocaust with the introduction of our app.</p>
+		{% else %}Tag Cloud{% endcase %}
+	</div>
+</div>
+
+<div class="content-section-a">
+	<div class="container">
+		<h2 class="section-heading">{% case page.lang %}{% when 'en' %}About us{% else %}Über uns{% endcase %}</h2>
+		<hr class="section-heading-spacer">
+		<div class="clearfix"></div>
+		<div class="row lead text-center">
+			<div class="col-sm-4">
+				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/1246674576/icon.jpg">
+				<h4>Tobias Kräntzer <a href="https://twitter.com/anagrom_ataf"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+			<div class="col-sm-4">
+				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/415472633317433345/sNfm7DoY.jpeg">
+				<h4>Niklas Riekenbrauck <a href="https://twitter.com/nikriek"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+			<div class="col-sm-4">
+				<img class="img-circle grid-img-small" src="http://optik.fluffel.io/images/le_me.jpg">
+				<h4>Udo Kramer <a href="https://twitter.com/optikfluffel"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+			<div class="col-sm-4">
+				<img class="img-circle grid-img-small" src="http://www.gravatar.com/avatar/ae2cc3279f2c24525c0dcae7063834d3.jpg?s=512">
+				<h4>Claus Höfele <a href="https://twitter.com/choefele"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+			<div class="col-sm-4">
+				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/415472633317433345/sNfm7DoY.jpeg">
+				<h4>Jing Li <a href="https://twitter.com/thyrlian"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+		</div>
+		<p class="lead">Da wir die Verantwortung und Arbeit für solch ein Projekt nicht alleine tragen können, haben wir uns Hilfe von verschiedenen Personen geholt.</p>
+	</div>
+</div>
+
+<div class="content-section-b">
+	<div class="container">
+		<h2 class="section-heading">{% case page.lang %}{% when 'en' %}Contribution{% else %}Mithelfen{% endcase %}</h2>
+		<hr class="section-heading-spacer">
+		<div class="clearfix"></div>
+		<p class="lead">Dieses Projekt wird komplett ehrenamtlich betrieben. Hilfe können wir deshalb immer gebrauchen. Dabei ist es egal, was Du kannst. Wir werden schon etwas finden. Wenn du programmieren kannst, ist vielleicht unser GitHub Repository etwas für dich.</p>
+	</div>
+</div>
+
+<div class="content-section-a">
+	<div class="container partner-section">
+		<h2 class="section-heading">{% case page.lang %}{% when 'en' %}Partners and supporters{% else %}Partner und Unterstützer{% endcase %}</h2>
+		<hr class="section-heading-spacer">
+		<div class="clearfix"></div>
+		<div class="row">
+			<div class="col-sm-4 text-center"><a href="http://codefor.de"><img class="grid-img" src="http://codefor.de/img/CFG_logo.svg"></a></div>
+  			<div class="col-sm-4 text-center"><a href="http://jugendhackt.de"><img class="grid-img" src="http://jugendhackt.de/wp-content/themes/ruboilerplate/library/images/logo.png"></a></div>
+  			<div class="col-sm-4 text-center"></div>
+		</div>
+	</div>
+</div>
+
+<div class="content-section-b">
+	<div class="container">
+		<h2 class="section-heading">{% case page.lang %}{% when 'en' %}News{% else %}Neuigkeiten{% endcase %}</h2>
+		<hr class="section-heading-spacer">
+		<div class="clearfix"></div>
+		<div>  
+  			{% for post in site.posts limit:1%}
+  				<h3>{{ post.title }}</h3>
+      			<h4>{{ post.date | date_to_string }}</h4> 
+      			<div class="lead">{{ post.content | truncatewords:150 }}</div>
+      			<a class="lead text-right" href="{{ post.url }}">{% case page.lang %}{% when 'en' %}Read more{% else %}Weiterlesen{% endcase %}…</a>
+    		{% endfor %}
+		</div>
+		<hr class="section-footer-spacer">
+		<div class="clearfix"></div>
+		<a href="/blog" class="lead pull-right">{% case page.lang %}{% when 'en' %}More posts{% else %}Weitere Posts{% endcase %}<span class="glyphicon glyphicon-chevron-right"></span></a>
+		<div class="clearfix"></div>
+		<div class="well">
+			<p class="lead">Um Neuigkeiten per Email zu erhalten, kannst du gerne den Newsletter abonnieren:</p>
+			<form id="newsletter-form" role="form">
+				<div class="input-group">
+					<input type="email" class="form-control" id="email" placeholder="Email-Adresse">
+					<span class="input-group-btn">
+						<button type="submit" class="btn btn-default">{% case page.lang %}{% when 'en' %}Subscribe{% else %}Abonnieren{% endcase %}</button>
+					</span>
+				</div>
+
+			</form>
+		</div>
+</div>
+	</div>
+</div>
+
+<div class="content-section-a">
+	<div class="container">
+		<h2 class="section-heading">{% case page.lang %}{% when 'en' %}Press{% else %}Presse{% endcase %}</h2>
+		<hr class="section-heading-spacer">
+		<div class="clearfix"></div>
+		<dl class="dl-horizontal lead">
+			<dt>September 2013</dt>
+			<dd>ZDF: <a href="http://blog.zdf.de/hyperland/2013/09/jugend-hackt-in-zwei-tagen-die-welt-neu-programmieren/">Jugend hackt: in zwei Tagen die Welt neu programmieren</a></dd>
+			<dd>Technologie Stiftung Berlin: <a href="http://www.tsb-berlin.de/tsb-berlin/news/de/2/11/0/1076/jugend-hackt-preistraeger">Jugend hackt: Preisträger</a></dd>
+			<dd>Young Rewired State: <a href="http://hacks.youngrewiredstate.org/events/yrsberlin/platecollect">YRSBerlin: Jugendhackt</a></dd>
+			<dd>SPIEGEL Online: <a href="http://www.spiegel.de/netzwelt/netzpolitik/jugend-hackt-in-berlin-a-921138.html">"Jugend hackt" in Berlin: Bananen verdrahten und Codezeilen schreiben</a></dd>
+			<dd>Govdata: <a href="https://www.govdata.de/neues/-/blogs/-jugend-hackt-kurt-sieger">"Jugend hackt" kürt Sieger</a></dd>
+			<dd>Berlin Projekt Zukunft: <a href="http://www.berlin.de/projektzukunft/ikt-wirtschaft/open-it/artikel/it-nachwuchs-entwickelt-neue-apps-und-webservices/">IT-Nachwuchs entwickelt neue Apps und Webservices</a></dd>
+			<dd>Starkt gemacht!: <a href="http://stark-gemacht.de/de/aktuelles/meldungen/4start/13-10-15_jugendhackt_doku.php">Rückblick: "Jugend hackt"</a></dd>
+			<dd>ZEIT Online: <a href="http://www.zeit.de/news/2013-09/08/gesellschaft-jugend-hackt-ein-wochenende-fuer-eine-app-08182403">"Jugend hackt": Ein Wochenende für eine App</a></dd>
+			<dt>November 2013</dt>
+			<dd>European Commission ICT 2013: <a href="https://ec.europa.eu/digital-agenda/en/ict-student-projects">ICT Student Projects</a></dd>
+			<dd>Open Knowledge Foundation Deutschland: <a href="http://okfn.de/2013/11/app-nach-litauen/">App nach Litauen</a></dd>
+			<dd>Zugang gestalten: <a href="http://www.zugang-gestalten.de/jugend-hackt/">Was wir mit offenen Daten machen – Jugend hackt</a></dd>
+			<dt>Dezember 2013</dt>
+			<dd>Wikimedia Deutschland: <a href="https://blog.wikimedia.de/2013/12/05/dualitaet-im-denken-auf-welche-barrieren-der-digitale-zugang-zu-kulturellem-erbe-trifft/">Dualität im Denken – Auf welche Barrieren der digitale Zugang zu kulturellem Erbe trifft</a></dd>
+			<dd>iRights info: <a href="http://irights.info/2013/12/03/zugang-gestalten-die-konferenz-zum-nachsehen/19755">Zugang gestalten! – Die Konferenz zum Nachsehen</a></dd>
+			<dt>Januar 2014</dt>
+			<dd>Goethe Institut: <a href="http://www.goethe.de/ins/pl/lp/kul/dup/bib/de12094548.htm">Wie Museen ihre digitalen Archive öffnen</a></dd>
+		</dl>
+	</div>
+	<!-- Powered by Bootstrap, http://glyphicons.com/, Jekyll, hosted by GitHub-->
+</div>
