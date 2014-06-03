@@ -3,6 +3,7 @@ layout: default
 title: Stolperstein-App
 source: http://startbootstrap.com/templates/landing-page/
 ---
+<a href="https://github.com/optionu"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"></a>
 <div class="intro-header">
 	<div class="container">
 		<div class="language-toggle"><ul>
@@ -17,10 +18,18 @@ source: http://startbootstrap.com/templates/landing-page/
 					<h3>Stolperstein-App mit Hintergrundinformationen</h3>
 					<hr class="intro-divider">
 					<ul class="list-inline intro-social-buttons"> 
+						{% case page.lang %}{% when 'en' %}
 						<li>  
-                            <a data-container="body" data-toggle="popover" data-placement="left" rel="popover" data-content="In Entwicklung"><img src="/img/app_store_badge.svg"></a>
-                            <a href="#newsletter-form" class="btn btn-default lead"><span class="glyphicon glyphicon-envelope"></span> Newsletter</a>
-                        </li>                    
+                            <a href="https://itunes.apple.com/us/app/stolpersteine-in-berlin/id640731757?mt=8"><img src="/img/app_store_badge_en.svg"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.option_u.stolpersteine"><img alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_45.png" /></a>
+                        </li> 
+
+						{% else %}
+						<li>  
+                        	<a href="https://itunes.apple.com/de/app/stolpersteine-in-berlin/id640731757?mt=8"><img src="/img/app_store_badge_de.svg"></a>
+                        	<a href="https://play.google.com/store/apps/details?id=com.option_u.stolpersteine"><img alt="Get it on Google Play" src="http://developer.android.com/images/brand/de_generic_rgb_wo_45.png" /></a>
+                    	</li> 
+						{% endcase %}                   
                     </ul>
 				</div>
 			</div>
@@ -48,25 +57,25 @@ source: http://startbootstrap.com/templates/landing-page/
 		<hr class="section-heading-spacer">
 		<div class="clearfix"></div>
 		<div class="row lead text-center">
-			<div class="col-sm-4">
-				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/1246674576/icon.jpg">
-				<h4>Tobias Kräntzer <a href="https://twitter.com/anagrom_ataf"><i class="fa fa-twitter"></i></a></h4>
-			</div>
-			<div class="col-sm-4">
-				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/415472633317433345/sNfm7DoY.jpeg">
-				<h4>Niklas Riekenbrauck <a href="https://twitter.com/nikriek"><i class="fa fa-twitter"></i></a></h4>
-			</div>
-			<div class="col-sm-4">
-				<img class="img-circle grid-img-small" src="http://optik.fluffel.io/images/le_me.jpg">
-				<h4>Udo Kramer <a href="https://twitter.com/optikfluffel"><i class="fa fa-twitter"></i></a></h4>
-			</div>
-			<div class="col-sm-4">
+			<div class="col-md-4 col-xs-6">
 				<img class="img-circle grid-img-small" src="http://www.gravatar.com/avatar/ae2cc3279f2c24525c0dcae7063834d3.jpg?s=512">
 				<h4>Claus Höfele <a href="https://twitter.com/choefele"><i class="fa fa-twitter"></i></a></h4>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-md-4 col-xs-6">
 				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/415472633317433345/sNfm7DoY.jpeg">
 				<h4>Jing Li <a href="https://twitter.com/thyrlian"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+			<div class="col-md-4 col-xs-6">
+				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/1246674576/icon.jpg">
+				<h4>Tobias Kräntzer <a href="https://twitter.com/anagrom_ataf"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+			<div class="col-md-4 col-xs-6">
+				<img class="img-circle grid-img-small" src="https://pbs.twimg.com/profile_images/415472633317433345/sNfm7DoY.jpeg">
+				<h4>Niklas Riekenbrauck <a href="https://twitter.com/nikriek"><i class="fa fa-twitter"></i></a></h4>
+			</div>
+			<div class="col-md-4 col-xs-6">
+				<img class="img-circle grid-img-small" src="http://optik.fluffel.io/images/le_me.jpg">
+				<h4>Udo Kramer <a href="https://twitter.com/optikfluffel"><i class="fa fa-twitter"></i></a></h4>
 			</div>
 		</div>
 		<p class="lead">Da wir die Verantwortung und Arbeit für solch ein Projekt nicht alleine tragen können, haben wir uns Hilfe von verschiedenen Personen geholt.</p>
